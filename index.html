@@ -5,10 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CSS -->
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/instructions.css">
 
     <title>Seleção Bitlab 2023</title>
 </head>
@@ -16,30 +21,60 @@
     <header>
         <a href="#" class="logo">Conteúdo Impróprio<span> DETECTOR</span></a>
         <div class="icons">
-            <div id="theme-toggler" class="fas fa-moon"></div>
+            <div id="menu-bar" class="fas fa-bars"></div>
         </div>
     </header>
 
+    <!-- INSTRUÇÕES -->
+    <nav class="navbar">
+        <div class="title">
+            <h3>INSTRUÇÕES</h3>
+        </div>
+    
+        <div class="instructions">
+    
+        </div>
+    
+        <div id="close" class="fas fa-times"></div>
+    
+    </nav>
+
     <main>
-        <section class="title-sec">
-            <div class="title">
-                <h5>Cats Perfil</h5>
-            </div>
-        </section>
-        <section class="content-sec">
-            <div class="content">
-                <div class="content-post">
-                    <img src="/img/cat.PNG" alt="img-post">
+
+        <!-- POST -->
+        <section class="post">
+            <!-- CABEÇALHO - usuário -->
+            <div class="info">
+                <div class="user">
+                    <div class="profile-pic"><img src="/img/cat.PNG"alt=""></div>
+                    <p class="username">cats_perfil</p>
                 </div>
-                <div class="comments"></div>
-                <form action="">
-                    <input type="search" id="search-bar">
-                    <label for="search-bar" class="fas fa-search"></label>
-                </form>
             </div>
-        </section>
+
+            <!-- POSTAGEM -->
+            <img src="img/cat.PNG" class="post-img">
+
+            <!-- COMENTÁRIOS -->
+            <div class="post-comment">
+
+                <!-- INPUT - comentários -->
+                <form action="">
+                    <img src="img/smile.PNG" class="icon">
+                    <input type="text" placeholder="Adicionar comentário"/>
+                    <label for="search-bar" class="btn-postar">postar</label>
+                </form>
+
+                <!-- COMENTÁRIOS - aprovados -->
+                <div class="comments"></div>
+            </div>
+        </section>  
+
     </main>
 
+    <!-- FOOTER -->
     <footer></footer>
+
+    <script src="/js/instructions.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>

@@ -18,13 +18,13 @@
     box-sizing: border-box;
     outline: none; border:none;
     text-decoration: none;
-    text-transform: capitalize;
     transition:.2s linear;
 }
 
 body {
     background-color: var(--bg);
 }
+
 header{
     width: 100%;
     display: flex;
@@ -33,16 +33,18 @@ header{
     border-bottom: 1px solid var(--white-color);
     padding: 1rem 5%;
 }
+
+/* LOGO - TXT */
 header .logo{
     color:var(--white-color);
     font-size: 2rem;
 }
-
 header .logo span{
     font-weight: bold;
     color:var(--orange);
 }
 
+/* BTN - mudar tema */
 header .icons div {
     height: 3rem;
     width: 3rem;
@@ -58,13 +60,12 @@ header .icons div {
 header .icons div h1{
     color: var(--white-color);
 }
-
 header .icons div:hover {
-    color: var(--white-color);
     background-color: var(--orange);
     transform: scale(1.1);
 }
 
+/* MAIN - POSTS */
 main {
     display: flex;
     flex-direction: column;
@@ -74,29 +75,75 @@ main {
     padding: 50px;
 }
 
+/* POST */
 section {
     width: 470px;
+    border-radius: 10px;
     background-color: var(--white-color);
+    border: 1px solid var(--white-color);
 }
-.title-sec {
-    padding: 10px;
+.info {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
 }
-.content-sec {
-    border-right: 1px solid var(--white-color);
-    border-left: 1px solid var(--white-color);
+.info .username {
+    width: auto;
+    font-weight: bold;
+    color: var(--bg);   
+    font-size: 14px;
+    margin-left: 10px;
 }
-
-.title h5 {
-    color: var(--bg);
-}
-.content {
+.info .user {
     display: flex;
     align-items: center;
-    flex-direction: column;
 }
-section .content-post img {
+.info .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.info .profile-pic img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid var(--black-color);
 }
 
+/* POSTAGEM - imagem */
+.post-img {
+    width: 100%;
+    object-fit: cover;
+}
 
+/* ADICIONAR - comentário */
+.post-comment form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border-radius: 1px solid var(--white-color);
+}
+.post-comment .icon {
+    height: 20px;
+}
 
+.post-comment form input {
+    width: 80%;
+    font-size: 14px;
+}
+
+.post-comment form label {
+    text-transform: capitalize;
+    color: rgb(0, 162, 255);
+    cursor: pointer;
+}
+
+/* https://www.youtube.com/watch?v=f9fqiNM30ik */
