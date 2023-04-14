@@ -36,30 +36,37 @@ function getFraseForm() {
     }
     
     const frase = {
-        keywords: inputFrase.value
+        frase: inputFrase.value
     } 
+    console.log(frase);
     return frase;
 }
 
 async function verificarCometarioApi(frase) {
-    const verificar = await fetch('http://localhost:3000/comentario/verificar-frase', {
+    const verificar = await fetch('http://localhost:3000/comentario/', {
         method: 'POST',
+        dataType: 'jsonp',
         headers: {
             Accept: 'application/json',
-            'Content-Type': 'application/json',
+            'Content-Type': 'application/json; charset=UTF-8',
         },
         body: JSON.stringify(frase)
     })
-
-    if(verificar.status != 400){
+  /*   .then((res) =>{
+        return res.json();
+    })
+    .then((data) => {
+        console.log(data)
+    })
+    */
+    if(verificar.status === 201){
         limparInput();
         postarComentario(frase);
         console.log('post deu certo');
     } else{
         limparInput();
-        postarComentario(frase);
         console.log('erro post');
-    }
+    } 
 }
 
 function postarComentario(frase) {
