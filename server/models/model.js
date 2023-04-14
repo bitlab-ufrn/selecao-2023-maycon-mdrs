@@ -1,4 +1,4 @@
-const { Sequelize, DataTypes } = require('sequelize');
+/* const { Sequelize, DataTypes } = require('sequelize');
 const sequelize = new Sequelize({
     dialect: 'sqlite',
     storage: './database.sqlite'
@@ -24,4 +24,4 @@ const OffensivesComments = sequelize.define('offensives_comments', {
     updatedAt: false
 });
 
-module.exports.OffensivesComments = OffensivesComments;
+module.exports.OffensivesComments = OffensivesComments; */

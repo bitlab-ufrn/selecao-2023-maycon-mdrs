@@ -1,4 +1,4 @@
-const { Sequelize } = require('sequelize');
+/* const { Sequelize } = require('sequelize');
 
 const  sequelize  = require('../models/model');
 
@@ -11,4 +11,4 @@ async function getComments () {
     return JSON.stringify(json);
 }
 
-module.exports.getComments = getComments;
+module.exports.getComments = getComments; */

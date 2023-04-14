@@ -1,4 +1,4 @@
-const express = require('express');
+/* const express = require('express');
 
 const app = express();
 const commentsController = require('./controller/CommentsController');
@@ -17,4 +17,4 @@ app.get('/post/comments', async (req, res) =>{
 app.get('/', (req, res) => {
     console.log("Conexão recebida em /");
     res.send('vvcvsadashjhgfd');
-});
+}); */
