@@ -140,10 +140,21 @@ section {
     font-size: 14px;
 }
 
-.post-comment form label {
+.post-comment form button {
+    background: none;
     text-transform: capitalize;
     color: rgb(0, 162, 255);
+    font-size: 16px;
     cursor: pointer;
+}
+
+.div-comentario {
+    padding: 0px 10px 5px 10px;
+}
+
+.div-comentario .nome-usuario {
+    font-weight: bold;
+    font-size: 14px;
 }
 
 /* https://www.youtube.com/watch?v=f9fqiNM30ik */

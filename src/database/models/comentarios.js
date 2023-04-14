@@ -1,4 +1,4 @@
-const comentariosOffensivos = (sequelize, DataTypes) => {
+const comentarios = (sequelize, DataTypes) => {
     // offensives_comments -> nome no sqlite
     const OffensivesComments = sequelize.define('offensives_comments', {
         id: {
@@ -23,4 +23,4 @@ const comentariosOffensivos = (sequelize, DataTypes) => {
     return OffensivesComments
 };
 
-module.exports = comentariosOffensivos;
+module.exports = comentarios;

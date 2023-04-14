@@ -1,12 +1,12 @@
 const Sequelize = require('sequelize');
 const sequelize = require('../config/sequelize');
 
-const OffensivesComments = require('./comentariosOffensivos');
+const OffensivesComments = require('./comentarios');
 
-const comentariosOffensivos = OffensivesComments(sequelize, Sequelize.DataTypes);
+const comentarios = OffensivesComments(sequelize, Sequelize.DataTypes);
 
 const db = {
-    comentariosOffensivos,
+    comentarios,
     sequelize,
 }
 
