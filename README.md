@@ -34,3 +34,9 @@ Você está livre para utilizar qualquer linguagem ou ferramenta.
 1. Adicione a esse README instruções de acesso ao seu sistema
 
 ## Acesso
+
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
