@@ -34,10 +34,23 @@ Você está livre para utilizar qualquer linguagem ou ferramenta.
 1. Adicione a esse README instruções de acesso ao seu sistema
 
 ## Acesso
-Vercel
-Veja o deploy em:
+Vercel - deploy em:
 >https://selecao-2023-maycon-mdrs.vercel.app/
-```
-    npm run dev
- ```
 
+Foi utilizado um conjunto de ferramentas para a implementação do projeto, incluindo node.js, HTML, javascript, css, sequelize e sqlite browser. Como solução, um banco de dados foi criado para armazenar um conjunto de palavrões e ofensas, os quais serão consultados pelo backend quando o usuário enviar uma frase como input. Além disso, por limitações, o database está presente na pasta do BackEnd.
+
+Para executar o projeto, é necessário instalar o pacote node.js na máquina:
+```
+cd .\backend\
+```
+```
+npm install
+```
+Posteriormente:
+```
+npm start
+```
+
+No canto superior direito da página web ao clicar no elemento irá abrir uma breve instrução/explicação. Além disso, existe uma página com a lista de palavras que foram cadastradas, para facilitar o teste.
+
+O objetivo do projeto era desenvolver uma solução capaz de detectar textos com conteúdo impróprio sem que a interface parecesse muito mecânica. Para isso, foi realizada uma adaptação da interface, tornando-a mais amigável e familiar ao usuário, de forma a proporcionar uma experiência mais agradável e intuitiva ( para melhorar a experiência e usabilidade do usuário ).
