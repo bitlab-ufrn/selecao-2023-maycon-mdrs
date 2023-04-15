@@ -56,7 +56,7 @@ async function verificarCometarioApi(frase) {
             postarComentario(frase); 
         } else{
             limparInput();
-            verificandoFrase(frase);
+            verificandoFrase(body['palavrasOfensivas']);
             console.log('erro post');
         } 
     }
@@ -136,7 +136,7 @@ verificandoDiv.appendChild(statusP);
 
 function verificandoFrase(frase) {
     verificandoDiv.style.display = "flex";
-    statusP.innerHTML = `${frase['frase']}`;
+    statusP.innerHTML = `${frase}`;
 }
 
 function fecharMensagem() {
