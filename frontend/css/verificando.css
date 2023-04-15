@@ -1,0 +1,71 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+}
+
+#verificando {
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    transition: 1s ease-in-out;
+}
+
+.close {
+    position: absolute;
+    top:1rem; right:1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: black;
+}
+.close:hover {
+    color: #B92C19;
+}
+.status {
+    font-size: 20px;
+    font-weight: bold;
+    color: #51b4db;
+}
+
+.bloqueio {
+    width: 80px;
+    height: 80px;
+    background: url('../img/x-2.png');
+    background-size: cover;
+    object-fit: contain;
+    background-position: center;
+}
+
+.palavras-txt {
+    color: #B92C19;
+    font-weight: bold;
+}
+
+.c-loader {
+    margin: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 6px solid #e5e5e5;
+    border-top-color: #51b4db;
+    animation: is-rotating 0.5s infinite;
+}
+
+@keyframes is-rotating {
+    to {
+        transform: rotate(1turn);
+    }
+}
