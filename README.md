@@ -34,9 +34,10 @@ Você está livre para utilizar qualquer linguagem ou ferramenta.
 1. Adicione a esse README instruções de acesso ao seu sistema
 
 ## Acesso
+Vercel
+Veja o deploy em:
+>https://selecao-2023-maycon-mdrs.vercel.app/
+```
+    npm run dev
+ ```
 
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
