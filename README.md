@@ -41,6 +41,7 @@ Foi utilizado um conjunto de ferramentas para a implementação do projeto, incl
 
 Para executar o projeto, é necessário instalar o pacote node.js na máquina:
 ```
+Entre na pasta:
 cd .\backend\
 ```
 ```
